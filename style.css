@@ -1,0 +1,134 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+path{
+    stroke-dasharray: 48713.31640625px;
+    animation: Sign 5s ease-in-out forwards;
+    animation-delay: 1s; 
+}
+
+#profileImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+svg {
+    transform: rotate(-90deg) scale(250%);
+}
+
+@keyframes Sign {
+    from
+    {
+        stroke-dashoffset: 48713.31640625px;
+    }
+    to
+    {
+        stroke-dashoffset: 0px;
+    }
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background: rgb(72, 72, 72);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainCard {
+    height: 90%;
+    width: 80vw;
+    background: rgb(207, 183, 230);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#icons {
+    height: 100%;
+    width: 7%;
+    background-color: rgb(219, 98, 158);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#snLogo {
+    height: 95%;
+    width: 95%;
+}
+
+#profileImage {
+    height: 110%;
+    width: 40%;
+    background-color: rgb(198, 232, 230);
+}
+
+#caligraphy {
+    position: relative;
+    top: 0%;
+    left: 25%;
+    transform: scale(200%) rotate(-90deg) translate(-50%,-50%);
+}
+
+#details {
+    height: 100%;
+    width: 53%;
+    background-color: rgb(55, 72, 169);
+    color: antiquewhite;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#page {
+    height: 100%;
+    padding: 0% 10% 0% 10%;
+}
+
+#tag {
+    height: 25%;
+    font-size: 7vw;
+    color: rgb(207, 215, 54);
+    display: flex;
+    align-items: center;
+}
+
+#profiledetail {
+    height: 15%;
+    font-size: 3vw;
+    display: flex;
+    align-items: center;
+}
+
+#aboutMe {
+    height: 60%;
+    font-size: 1vw;
+    font-size: larger;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#skillsCard {
+    height: 12vw;
+    width: max(10vw,4em);
+    background-color: bisque;
+    color: brown;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
