@@ -1,0 +1,88 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;background: rgb(173,110,215);
+    background: linear-gradient(62deg, rgba(173,110,215,1) 28%, rgba(192,79,79,1) 61%, rgba(245,182,94,1) 88%);
+}
+
+.board {
+    height: min(600px,90vw);
+    width: min(600px,90vw);
+    /* background: burlywood; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: grid;
+    /* gap: 1px; */
+    grid-template-columns: repeat(3,1fr);
+}
+
+.block {
+    height: min(180px,28vw);
+    width: min(180px,28vw);
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    font-size: 5em;
+    border-radius: 25%;
+}
+#celloFill {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    backdrop-filter: blur(2px) saturate(200%);
+    -webkit-backdrop-filter: blur(2px) saturate(200%);
+    background-color: rgba(58, 71, 97, 0.5);
+}
+#announcement {
+    height: 40%;
+    width: 80%;
+    /* background: blueviolet; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#restart {
+    height: 40%;
+    width: 80%;
+    background: rgb(43, 226, 58);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+.messageBox {
+    height: min(150px,25vw);
+    width: min(300px,90vw);
+    border-radius: 20px;
+    backdrop-filter: blur(2px) saturate(200%);
+    -webkit-backdrop-filter: blur(2px) saturate(200%);
+    background-color: rgba(98, 153, 143, 0.673);
+    font-size: calc(1em + 1vw);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    user-select: none;
+}
+
+.messageBox > button {
+    width: 80%;
+}
+#restart {
+    width: 50%;
+}
+
+#restart:hover {
+    cursor :pointer;
+}
